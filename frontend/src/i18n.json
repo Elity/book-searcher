@@ -44,7 +44,7 @@
       "settings": {
         "title": "Settings",
         "ipfs_gateways": "IPFS Gateways",
-        "ipfs_gateways_help": "IPFS Gateways List, line break",
+        "ipfs_gateways_help": "IPFS Gateways List, line break, or click here find more...",
         "cancel": "Cancel",
         "save": "Save"
       }
@@ -95,7 +95,7 @@
       "settings": {
         "title": "设置",
         "ipfs_gateways": "IPFS 网关",
-        "ipfs_gateways_help": "IPFS 网关列表，一行一个",
+        "ipfs_gateways_help": "IPFS 网关列表，一行一个，或点击查看更多可用网关",
         "cancel": "取消",
         "save": "保存"
       }

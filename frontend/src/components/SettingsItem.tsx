@@ -34,9 +34,9 @@ export const SettingsItem: React.FC<SettingsItemProps> = ({
       <FormLabel>
         {label}{' '}
         {help && (
-          <Tooltip hasArrow label={help} onClick={() => window.open('https://ipfs-checker.1kbtool.com/')}>
+          <Tooltip hasArrow label={help}>
             <Text as="span">
-              <Icon as={TbHelp}></Icon>
+              <Icon onClick={() => window.open('https://ipfs-checker.1kbtool.com/')} as={TbHelp}></Icon>
             </Text>
           </Tooltip>
         )}
