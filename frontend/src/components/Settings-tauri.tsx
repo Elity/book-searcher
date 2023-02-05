@@ -146,6 +146,7 @@ const Settings: React.FC = () => {
               {t('settings.cancel')}
             </Button>
             <Button colorScheme="blue" type="submit" form="settings-form" isLoading={submitting}>
+              
               {t('settings.save')}
             </Button>
           </DrawerFooter>

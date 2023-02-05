@@ -12,6 +12,24 @@ import { initReactI18next } from 'react-i18next';
 import merge from 'lodash/merge';
 import theme from './theme';
 
+// 默认写入网关
+try {
+  localStorage.setItem(
+    "ipfs_gateways",
+    JSON.stringify([
+      "https://cloudflare-ipfs.com/",
+      "https://dweb.link/",
+      "https://ipfs.io/",
+      "https://gateway.pinata.cloud/",
+      "https://ipfs.runfission.com/",
+      "https://ipfs.best-practice.se",
+      "https://ipfs.joaoleitao.org",
+    ]),
+    );
+} catch(e) {
+  console.error(e);
+}
+
 const resources =
   import.meta.env.VITE_TAURI === '1'
     ? merge(i18nResource, (await import('./i18n-tauri.json')).default)
